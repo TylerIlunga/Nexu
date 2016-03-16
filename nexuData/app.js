@@ -79,7 +79,6 @@ http.listen(port,"192.168.0.102", function(err){
 	console.log("listening on 192.168.0.102:" + port);
 });
 //web connection
-// 192.168.0.255
 // var apiController = require('./controllers/apiController');
 // var htmlController = require('./controllers/htmlController');
 
