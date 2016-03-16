@@ -3,7 +3,7 @@ var app = express();
 var mongoose = require('mongoose');
 var port = process.env.PORT || 3000;
 
-mongoose.connect('mongodb://tylerilunga1:cougarsc7@ds011399.mlab.com:11399/iosdata');
+mongoose.connect('');
 
 app.use('/', function(req, res, next){
 	console.log('Requested URL: ' + req.url);
