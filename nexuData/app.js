@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 var port = process.env.PORT || 3000;
+var ip = "";
 
 mongoose.connect('');
 
@@ -73,10 +74,10 @@ io.on('connection', function(socket) {
     });
 });
 
-http.listen(port,"192.168.0.102", function(err){
+http.listen(port, ip, function(err){
 	if (err) throw err 
 
-	console.log("listening on 192.168.0.102:" + port);
+	console.log("listening on " + ip + ":" + port);
 });
 //web connection
 // var apiController = require('./controllers/apiController');
