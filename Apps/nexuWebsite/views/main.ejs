@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<% include partials/head.ejs %>
+<body>
+<% include partials/navbar.ejs %>
+
+
+	<div class="container" style="max-width: 900px">
+		<div class="jumbotron">
+			<h1 style="text-align: center;">
+				Nexu
+				<br>
+				<small>Beat the crowds, show your style.</small>
+			</h1>
+
+			<br><br>
+			<a href="/products" class="btn btn-success" style="width: 100%">Order Now</a>
+
+		</div>
+	</div>
+</body>
+
+<style type="text/css">
+	.navbar-default {
+		height: 80px;
+	}
+
+	.navbar-default .navbar-nav {
+		margin-top: 12px;
+	}
+	.jumbotron {
+		opacity: 0;
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+	}
+
+	.jumbotron.load {
+    opacity: 1;
+}
+
+
+</style>
+
+<script type="text/javascript">
+	$(".jumbotron").addClass("load");
+</script>
+
+</html>

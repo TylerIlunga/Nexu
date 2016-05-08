@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="myApp">
+<% include partials/head.ejs %>
+<body>
+<% include partials/navbar.ejs %>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="/controllers/token.js"></script>
+	<div class="container" style="max-width: 900px" id="form">
+		<form action="/api/order" method="post">
+			<div class="form-group">
+				<label>Shoe</label>
+				<input type="text" class="form-control" required name="shoe" placeholder="Shoe" id="shoe">
+			</div>
+			<div class="form-group">
+				<label>Shoe Size</label>
+				<input type="text" class="form-control" required name="shoesize" placeholder="11" id="shoeSize"></input>
+			</div>
+			<div class="form-group">
+				<label>Email</label>
+				<input type="text" class="form-control" required name="email" placeholder="Email" id="email">
+			</div>
+			<div class="form-group">
+				<label>Phone Number</label>
+				<input type="text" class="form-control" required name="number" placeholder="Phone Number" id="number">
+			</div>
+			<div class="form-group">
+				<label>Address</label>
+				<input type="text" class="form-control" required name="address" placeholder="Address" id="address">
+			</div>
+
+			<button type="submit" class="btn btn-success" style="width: 100%" id="submit" data-toggle="modal" data-target="#userTokenScreen">
+				Submit Shoe Order
+			</button>
+		</form>
+	</div>
+	<!-- <br />
+	<div class="container">
+		<div class="row">
+			<div class='col-md-6'>
+			  	<h1>Step 1</h1>
+			</div>
+		 <div class="row">
+			  <div class="col-md-6">
+			  <h1>Step 2</h1>
+			  </div>
+		 </div>
+		 <div class="row">
+		 	<div class="col-md-6">
+		 		<h1>Step 3</h1>
+		 	</div>
+		 </div>
+	</div> -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="userTokenScreen" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align: center;">Copy Confirmation Code!</h4>
+        </div>
+        <div class="modal-body" style="text-align: center;" ng-controller="tokenCtrl">
+         <!-- {{ token() }} -->
+         Coming Soon!
+        </div>
+        <div class="modal-footer">
+         <a href="/buy" class="btn btn-default">
+         
+          Close
+
+          </a>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+<style type="text/css">
+	.navbar-default {
+		height: 80px;
+	}
+
+	.navbar-default .navbar-nav {
+		margin-top: 12px;
+	}
+	#form {
+		color: white;
+	}
+</style>
+
+</html>

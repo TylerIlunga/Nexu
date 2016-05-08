@@ -1,0 +1,45 @@
+<html>
+<% include partials/head.ejs %>
+<body>
+<% include partials/navbar.ejs %>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 style="text-align: center;">Buy</h1>
+			<p style="text-align: center;">Click to Complete Reservation</p>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="text-align: center;">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="VG2SY7MSA8Q3S">
+					<table>
+						<tr><td><input type="hidden" name="on0" value="Shoes"></td></tr><tr><td><select name="os0">
+							<option value="Air Jordan 9 Retro Low">Air Jordan 9 Retro Low $250.00 USD</option>
+							<option value="Kobe 11 Elite Low">Kobe 11 Elite Low $220.00 USD</option>
+							<option value="Air Foamposite Pro">Air Foamposite Pro $300.00 USD</option>
+							<option value="Sock Dart SE 'Racer Blue/Hasta/Black">Sock Dart SE 'Racer Blue/Hasta/Black $150.00 USD</option>
+							<option value="Air Jordan 10 Retro 'NYC'">Air Jordan 10 Retro 'NYC' $200.00 USD</option>
+							<option value="Free Inneva Woven 'Black'">Free Inneva Woven 'Black' $400.00 USD</option>
+                		</select> </td></tr>
+					</table>
+		<input type="hidden" name="currency_code" value="USD">
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+		</div>
+	</div>
+</body>
+
+<style type="text/css">
+	.navbar-default {
+		height: 80px;
+	}
+
+	.navbar-default .navbar-nav {
+		margin-top: 12px;
+	}
+	form table {
+    margin: auto;
+    float: center;
+	}
+</style>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<% include partials/head.ejs %>
+<body>
+<% include partials/navbar.ejs %>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 style="text-align: center;">Products</h1>
+		</div>
+	</div>
+	<div class="container" action="/products" method="get">
+		<div class="imgDisplay">
+			<a href="/order"><img src="/images/jordan.jpg" class="img-rounded" class="img-responsive" id="airJordans" style="width: 350px; height: 250px;"></a>
+			<p style="color: white">
+			Air Jordan 9 Retro Low ($250)
+			</p>
+			<p style="color: white">Order Now!</p>
+		</div>
+		<div class="imgDisplay">
+			<a href="/order"><img src="/images/kobe.jpg" class="img-rounded" class="img-responsive" id="kobes" style="width: 350px; height: 250px;"></a>
+			<p style="color: white">
+			Kobe 11 Elite Low 'FTB'
+			</p>
+			<p style="color: white">Order Now!</p>
+		</div>
+		<div class="imgDisplay">
+			<a href="/order"><img src="/images/foams.jpg" class="img-rounded" class="img-responsive" id="foams" style="width: 350px; height: 250px;"></a>
+			<p style="color: white">Air Foamposite Pro 'University Red'</p>
+			<p style="color: white">Order Now!</p>
+		</div>
+		<div class="imgDisplay">
+			<a href="/order"><img src="/images/racer.jpg" class="img-rounded" class="img-responsive" id="airJordans" style="width: 350px; height: 250px;"></a>
+			<p style="color: white">
+			Sock Dart SE 'Racer Blue/Hasta/Black'
+			</p>
+			<p style="color: white">Order Now!</p>
+		</div>
+		<div class="imgDisplay">
+			<a href="/order"><img src="/images/retro10.jpg" class="img-rounded" class="img-responsive" id="kobes" style="width: 350px; height: 250px;"></a>
+			<p style="color: white">
+			Air Jordan 10 Retro 'NYC' 
+			</p>
+			<p style="color: white">Coming out: April 28, 2016! Pre-order Now!</p>
+		</div>
+		<div class="imgDisplay">
+			<a href="/order"><img src="/images/inneva.jpg" class="img-rounded" class="img-responsive" id="foams" style="width: 350px; height: 250px;"></a>
+			<p style="color: white">
+			Free Inneva Woven 'Black'
+			</p>
+			<p style="color: white">Coming out: April 30, 2016! Pre-order Now!</p>
+		</div>
+	</div>
+
+	<div class="row">
+		
+		
+	</div>
+</body>
+
+<style type="text/css">
+	.container .imgDisplay {
+		display: inline-block;
+		text-align: center;
+		margin: 10px;
+	}
+	.navbar-default {
+		height: 80px;
+	}
+
+	.navbar-default .navbar-nav {
+		margin-top: 12px;
+	}
+	.imgDisplay p {
+		font-size: 15px;
+	}
+</style>
+</html>
